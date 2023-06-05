@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-<!--lets's use the meta tags so that out website is nicely visible across all devices-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,19 +8,29 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <main>
-        <h1>EduConnect Nepal</h1>  
-    </main>
     <ul>
-        <li> Condition </li>
-        <li> About </li>
-        <li> Organisation </li>
-        <li> Get Involved </li>
-        <li> Contact </li>
+      <p><font face="Arial" color="black" size="6">EduConnect Nepal</font></p>
+        <li><a href='#About'>About</a></li>
+        <li><a href='#Condition'> Condition</a></li>
+        <li id="orgButton"><a href='#Organisation'>Organisation</a></li>
+        <li><a href='#Get Involved'>Get Involved </a></li>
+        <li><a href='#Contact'>Contact </a></li>
     </ul>
-	<script src="index.js"></script>
+    <section id ="About">
+      <h1 id="about">About us </h2>
+        <p>EduConnect Nepal is a non-profit organisation that provides information on all the organisations that are working to make the
+          education better in Nepal. We connect people intersted in Education to the Educators. 
+        </p>
+    </section>
+
+    <section id="Organisation">
+      <h2 id="orgHeader">Our Organisations</h2>  <!-- Added an id here -->
+      <!-- Information about organisations... -->
+      The following organisations here are working to make the government and public Education in Nepal better. Get to know them on the map
+      and visit their website.
+      <div id="map"></div>
+    </section>
+    <script src="index.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZ2CBXxOhr5SEujlXQrhCcZ9jsI7RS6Tg&callback=initMap"></script>
   </body>
 </html>
-
-
-

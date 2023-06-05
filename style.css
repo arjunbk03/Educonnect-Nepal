@@ -1,3 +1,64 @@
+/* For Educonnect Nepal: */
+p {
+    float:left;
+    margin-right: 200px;
+    line-height: 30px;
+}
+
+/* For the nav bars */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 4;
+    overflow: hidden;
+    background-color: #f1c6c6;
+}
 li {
-    display: inline;
+    float:left;
+}
+li a {
+    display: block;
+    display: inline-block;
+    font-size: 17px;
+    padding:20px;
+    text-align: center;
+    margin-left: 50px;
+    background-color: #f1c6c6;
+}
+li a:hover {
+    background-color: #c9f2b1;
+}
+/* For the map on the front page */
+#mapSection {
+    width: 80%;
+    margin: auto;
+}
+
+/* Style your map */
+h2#orgHeader {
+    display: none;  /* Initially hide the header */
+    transition: display 0.5s;  /* Add a transition effect */
+}
+
+#map {
+    height: 0;  /* Initially hide the map */
+    width: 100%;
+    border: 0px solid #bd6666;
+    border-radius: 50px;
+    margin-top: 100px;
+    overflow: hidden; /* Hide the overflowing part of the map */
+    transition: height 0.5s;  /* Add a transition effect */
+}
+
+.buttonStyle {
+    background-color: #f1c6c6;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
