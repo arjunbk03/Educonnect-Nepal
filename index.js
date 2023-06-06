@@ -62,7 +62,7 @@ function initMap() {
     {name: "World Vision", location: {lat:27.67005281635616, lng:85.31366759561045}}, //World vision
     {name: "Teach for Nepal", location: {lat:27.7101266708403, lng:85.31584108845894}},//TFN Kathmandu
     {name: "United World Schools", location: {lat:27.73967429327601, lng:85.33628812924816}},//UWC Kathmandu
-    {name: "National Campaign for Education Nepal", location: {lat:27.684259641565617, lng:85.31212091088322}},
+    {name: "National Campaign for Education Nepal", location: {lat:27.684259641565617, lng:85.31212091088322}}, //National Campaign for Education Nepal
   ];
   // Add a markers for organisations
   organisations.forEach(function(org) {
