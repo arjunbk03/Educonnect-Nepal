@@ -23,43 +23,85 @@
   </ul>
 
   <!--Put slideshow of images on the homepage-->
-    <div class="slideshow-container">
-      <div class="slide fade">
-        <img src="/img/rural.webp" style="width:100%">
-      </div>
-      <div class="slide fade">
-        <img src="/img/edu.jpeg" style="width:100%">
-      </div>
-      <div class="slide fade">
-        <img src="/img/EduConnectNepal.jpeg" style="width:100%">
-      </div>
-  
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+   <!--Put slideshow of images on the homepage-->
+  <div class="slideshow-container">
+    <div class="slide fade">
+      <img src="/img/rural.webp" style="width:100%">
+      <h2 class="image-text">"Education is the most powerful weapon you can use to change the world." Nelson Mandela </h2>
     </div>
-    
+    <div class="slide fade">
+      <img src="/img/edu.jpeg" style="width:100%">
+      <h2 class="image-text">But Nepal's education sector grapples with a lot of problems.</h2>
+    </div>
+    <div class="slide fade">
+      <img src="/img/EduConnectNepal.jpeg" style="width:100%">
+      <h2 class="image-text">Let's support those working tirelessly to enhance education in Nepal.</h2>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
 
 
   <!--Now this is all the navigation bar in details-->
   <section id="About" class="about-container">
     <div class="about">
      <!--<h2>About</h2>-->
-        <p>EduConnect Nepal aims to connect organisations striving to enhance the primary and secondary education in Nepal and individuals who want to contribute to meaningful causes.</p> 
+        <p>EduConnect Nepal aims to connect organisations striving to enhance the primary and secondary education in Nepal and individuals who want to contribute to meaningful causes.</p>
+        <h3>We beleive that every child deserves quality education.</h3>
   </section>
 
   <section id="Condition" class="condition-container">
     <div class="condition">
-      <h2>Current Condition</h2>
-        <p></p>
+      <h2>More about the current education condition of Nepal:</h2>
+        <div class="card-container">
+          <a href="https://www.collegenp.com/article/education-system-in-nepal/" target="_blank" class="card">
+            <img class="card-img" src="https://www.collegenp.com/uploads/2023/02/Education-System.jpg" alt="College NP">
+            <div class="card-description">
+              <h4><b>Education System in Nepal: Structure, Challenges and Solutions.</b></h4> 
+              <p>Education is a critical aspect of human development and progress, and it is no different in the case of Nepal</p>
+            </div>
+          </a>
+          <a href="https://datatopics.worldbank.org/education/country/nepal" target="_blank" class="card">
+            <img class="card-img" src="https://www.researchgate.net/publication/344886961/figure/fig4/AS:950886348099586@1603720380265/Enrollment-in-primary-education-Source-World-DataBank-Education-Statistics-Core.png" alt="World Bank Education">
+            <div class="card-description">
+              <h4><b>Education Statistics from the World Bank</b></h4> 
+              <p>This consists of total enrollment in the school, education indicators, learning outcomes, governmental expenditures on education, and world bank education projects.</p>
+            </div>
+          </a>
+          <a href="https://www.unicef.org/nepal/education#programme-solution" target="_blank" class="card">
+            <img class="card-img" src="https://www.unicef.org/nepal/sites/unicef.org.nepal/files/styles/hero_extended/public/_NP_9264_0.jpg?itok=ssybhyIi" alt="UNICEF Nepal">
+            <div class="card-description">
+              <h4><b>Education | UNICEF Nepal</b></h4> 
+              <p>Education is a fundamental human right. UNICEF is dedicated to making sure that all children can enjoy their right to a quality education, from early learning opportunities that lay the groundwork for success in school, all the way through secondary school.</p>
+            </div>
+          </a>
+        </div>
+    </div>      
   </section>
-
+  
   <section id="Organisation">
     <h2>Organisation</h2>
-    <p>The following organisations here are working to make the government and public Education in Nepal better. Get to know them on the map
-    and visit their website. Below the map, you can also find a list of organisation with their email, address, and logo.</p>
-    <div id="map"></div>
-  </section>
+    <p>The following organisations here are working to make the government and public Education in Nepal better. Get to know them on the map and visit their website. Below the map, you can also find a list of organisation with their email, address, and logo.</p>
+</section>
+
+<section>
+  <div class="organizations">
+      <div class="organization">
+          <img src="https://sjussnp.files.wordpress.com/2019/08/homepage-logo.jpg?w=1000" alt="Collaborative Schools Network Logo">
+          <h3>Collaborative Schools Network</h3>
+          <p><strong>Email:</strong> <a href="mailto:network.collaborativeschools@gmail.com">network.collaborativeschools@gmail.com</a></p>
+          <p><strong>Website: </strong><a href="https://collaborativeschools.info/">collaborativeschools.info</a></p>
+          <p><strong>About:</strong> We manage public schools in Nepal to transform the quality of education they provide to some of the country's poorest children.</p>
+      </div>
+      <!-- Repeat this 'organization' div block for other organizations -->
+  </div>
+
+  <h2>Map</h2>
+  <p>See the location of these organisations on the map below:</p>
+  <div id="map"></div>
+</section>
 
   <section id="Get-Involved">
     <h2>Get Involved</h2>
@@ -70,7 +112,7 @@
     <h2>Contact</h2>
     <p>arjunbk@skidmore.edu</p>
   </section>
-  
+
   <script src="index.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZ2CBXxOhr5SEujlXQrhCcZ9jsI7RS6Tg&callback=initMap"></script>
 </body>

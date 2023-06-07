@@ -14,14 +14,20 @@ function showSlides(n) {
   if (n < 1) {slideIndex = slides.length}
   
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+    slides[i].style.display = "none";  
+    slides[i].classList.remove("fade"); // removed the fade class
   }
   
   slides[slideIndex-1].style.display = "block";  
+  slides[slideIndex-1].classList.add("fade"); // added the fade class
 }
 
 
+
+
+
 //this is for the Map
+
 let map;
 const nepal = { lat: 28.3949, lng: 84.1240 };
 
@@ -63,8 +69,9 @@ function initMap() {
     {name: "Teach for Nepal", location: {lat:27.7101266708403, lng:85.31584108845894}},//TFN Kathmandu
     {name: "United World Schools", location: {lat:27.73967429327601, lng:85.33628812924816}},//UWC Kathmandu
     {name: "National Campaign for Education Nepal", location: {lat:27.684259641565617, lng:85.31212091088322}}, //National Campaign for Education Nepal
-  ];
-  // Add a markers for organisations
+  ];;
+
+  // Add markers for organisations
   organisations.forEach(function(org) {
     var marker = new google.maps.Marker({position: org.location, map: map});
     var infowindow = new google.maps.InfoWindow({
@@ -86,19 +93,6 @@ function initMap() {
 }
 
 window.onload = initMap;
-
-document.getElementById("orgButton").addEventListener("click", function() {
-    var mapDiv = document.getElementById("map");
-    var header = document.getElementById("orgHeader");  // Get the header
-
-    if(mapDiv.style.height === "500px") {
-        mapDiv.style.height = "0";
-        header.style.display = "none";  // Hide the header
-    } else {
-        mapDiv.style.height = "500px";
-        header.style.display = "block";  // Show the header
-    }
-});
 
 
   
