@@ -8,21 +8,21 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <ul>
-    <li>
-      <p>
-        <img src="/img/loogo.png" alt="Logo" id="logo">
-      </p>
-    </li>
-    <p><font face="Arial" color="black" size="6">EduConnect Nepal</font></p>
-    <li><a href='#About'>ABOUT</a></li>
-    <li><a href='#Condition'> CURRENT CONDITION</a></li>
-    <li id="orgButton"><a href='#Organisation'>ORGANISATION</a></li>
-    <li><a href='#Get-Involved'>GET INVOLVED</a></li>
-    <li><a href='#Contact'>CONTACT</a></li>
-  </ul>
+  <header>
+    <ul>
+      <li>
+        <img src="/img/loogo.png" alt="EduConnect Nepal Logo" id="logo">
+      </li>
+      <li id="brand-name">EduConnect Nepal</li>
+      <li><a href='#About'>ABOUT</a></li>
+      <li><a href='#Condition'> CURRENT CONDITION</a></li>
+      <li><a href='#Organisation'>ORGANISATION</a></li>
+      <li><a href='#Get-Involved'>GET INVOLVED</a></li>
+      <li><a href='#Contact'>CONTACT</a></li>
+    </ul>
+  </header>
 
-  <!--Put slideshow of images on the homepage-->
+  <main> 
    <!--Put slideshow of images on the homepage-->
   <div class="slideshow-container">
     <div class="slide fade">
@@ -87,16 +87,46 @@
 </section>
 
 <section>
-  <div class="organizations">
-      <div class="organization">
+  <div class="organisations">
+      <div class="organisation">
           <img src="https://sjussnp.files.wordpress.com/2019/08/homepage-logo.jpg?w=1000" alt="Collaborative Schools Network Logo">
           <h3>Collaborative Schools Network</h3>
           <p><strong>Email:</strong> <a href="mailto:network.collaborativeschools@gmail.com">network.collaborativeschools@gmail.com</a></p>
           <p><strong>Website: </strong><a href="https://collaborativeschools.info/">collaborativeschools.info</a></p>
           <p><strong>About:</strong> We manage public schools in Nepal to transform the quality of education they provide to some of the country's poorest children.</p>
       </div>
-      <!-- Repeat this 'organization' div block for other organizations -->
+      <div class="organisation">
+        <img src="https://yt3.googleusercontent.com/ytc/AGIKgqPuLTGRyDTvEnvC5-KLYr35Q-dI1DICuHfsdLlZ=s900-c-k-c0x00ffffff-no-rj" alt="Teach For Nepal Logo">
+        <h3>Teach For Nepal</h3>
+        <p><strong>Email:</strong> <a href="mailto:info@teachfornepal.org">info@teachfornepal.org</a></p>
+        <p><strong>Website: </strong><a href="https://www.teachfornepal.org/">teachfornepal.org</a></p>
+        <p><strong>About:</strong> Teach for Nepal is a movement of outstanding university graduates and young professionals
+           who are committed to end education inequity in Nepal starting with two years of fellowship teaching in public schools.
+          Teach For Nepal fellowship is a two year long, full-time paid employment opportunity.
+        </p>
+    </div>
+    <div class="organisation">
+      <img src="https://sharondavisdesign.com/newsite/wp-content/uploads/2021/06/Logo-Maya-Universe-Academy.png" alt="Maya Universe Logo">
+      <h3>Maya Universe Academy</h3>
+      <p><strong>Email:</strong> <a href="mailto:mayauniverseacademynepal@gmail.com">mayauniverseacademynepal@gmail.com</a></p>
+      <p><strong>Website: </strong><a href="https://mayauniverseacademy.org/">mayauniverseacademy.org</a></p>
+      <p><strong>About:</strong>Maya Universe Academy was established in 2011 by youths determined to challenge the education system in Nepal. 
+        The chain of private schools provides access to affordable and quality education to children living in rural Nepal.
+      </p>
   </div>
+  <div class="organisation">
+    <img src="https://www.savethechildren.org/content/dam/usa/images/defaults/scus-fb-white-background-1200x630.jpg/_jcr_content/renditions/original.img.jpg" alt="Save the Children Nepal Logo">
+    <h3>Save the Children Nepal</h3>
+    <p><strong>Email:</strong> <a href="mailto:post.nepal@savethechildren.org">post.nepal@savethechildren.org</a></p>
+    <p><strong>Website: </strong><a href="https://nepal.savethechildren.net/">savethechildren.net</a></p>
+    <p><strong>About:</strong>Save the Children has been operating in Nepal since 1976. Our programs to improve the lives of children in Nepal are 
+      guided by the National Plan of Action for Children and the UN Millennium Development Goals. As the largest child-focused organization in the 
+      Nepal, we cover a wide geographical area with multiple programs that support our vision for all children to attain the right to survival, 
+      protection, development and participation.
+    </p>
+</div>
+  </div>
+
 
   <h2>Map</h2>
   <p>See the location of these organisations on the map below:</p>
@@ -112,6 +142,7 @@
     <h2>Contact</h2>
     <p>arjunbk@skidmore.edu</p>
   </section>
+  </main>
 
   <script src="index.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZ2CBXxOhr5SEujlXQrhCcZ9jsI7RS6Tg&callback=initMap"></script>
