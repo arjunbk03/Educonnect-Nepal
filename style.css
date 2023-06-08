@@ -252,3 +252,30 @@ li a:hover {
     margin: 4px 2px;
     cursor: pointer;
 }
+
+/*Get-Involved */
+
+#get-involved {
+    margin-bottom: 150px;
+    margin-top: 50px;
+}
+
+
+
+
+/*This is for the contact and contact form */
+.contact-details {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.contact-form {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+h2 {
+    color: #333;
+}
