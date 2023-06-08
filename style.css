@@ -256,26 +256,102 @@ li a:hover {
 /*Get-Involved */
 
 #get-involved {
-    margin-bottom: 150px;
-    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    padding: 20px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/f/fc/Natural_scenery_of_nepal_09.jpg') no-repeat center center/cover;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    line-height: 1.5;
+    width: 90%;
+    text-align: center;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0); /* Change text color to white for better visibility on image background */
+}
+
+#get-involved ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text visibility */
+}
+
+#get-involved ul li {
+    margin: 10px 0;
+}
+
+#get-involved ul li a {
+    color: rgb(0, 0, 0); /* Change link color to white for better visibility on image background */
+    text-decoration: none;
+}
+
+#get-involved ul li a:hover {
+    color: #c1ac37; /* Change hover color to gold for contrast and better UX */
 }
 
 
 
+#contact-details {
+    display: flex;
+    flex-direction:column;
+    margin-bottom: 50px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    line-height: 1.5;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 5px;
+    word-wrap: break-word;
+    text-align: center;
+    flex-direction: column;
+    align-items: center; 
+    
+}
 
-/*This is for the contact and contact form */
-.contact-details {
-    display:flex;
+#contact-container {
+    display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    padding: 20px;
 }
 
-.contact-form {
-    margin-bottom: 50px;
-    margin-top: 50px;
+#contact-details, #contact-form {
+    flex: 1;
+    margin: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    line-height: 1.5;
+    justify-content: center;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    text-align: center;
 }
 
-h2 {
-    color: #333;
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    background-color: #007BFF;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #0056b3;
 }

@@ -94,6 +94,35 @@ function initMap() {
 
 window.onload = initMap;
 
+//Form to contact me: 
+//I'm using formspree to get the form to my email:
+document.getElementById('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+
+    fetch('https://formspree.io/f/xbjevblr', {
+        method: 'POST',
+        body: JSON.stringify({
+            name: name,
+            email: email,
+            message: message
+        }),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }).then(function(response) {
+        if (response.ok) {
+            alert('Your message has been sent. Thank you!');
+            return;
+        }
+        alert('Error: ' + response.statusText);
+    }).catch(function(error) {
+        alert('There was a problem with the request: ' + error.message);
+    });
+});
 
   
   
