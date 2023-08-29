@@ -94,6 +94,18 @@ function initMap() {
 
 window.onload = initMap;
 
+
+//This is for the partnership section: 
+document.getElementById('moreInfoBtn').addEventListener('click', function() {
+  document.getElementById('modal').style.display = "block";
+});
+
+document.querySelector('.close').addEventListener('click', function() {
+  document.getElementById('modal').style.display = "none";
+});
+
+
+
 //Form to contact me: 
 //I'm using formspree to get the form to my email:
 document.getElementById('form').addEventListener('submit', function(event) {

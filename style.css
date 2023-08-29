@@ -1,3 +1,15 @@
+/*Using the same font from the google fonts */
+/* General Font Styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #666;  /* general text color, you can adjust */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;  /* headings color, you can adjust */
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -118,7 +130,13 @@ li a:hover {
   .fade .image-text {
     opacity: 1;
   }
-  
+
+  .bottom-right {
+    position: absolute;
+    color:white;
+    bottom: 8px;
+    right: 16px;
+    }
 /*About Page Styles */
 .about {
     background-color: white;
@@ -215,7 +233,6 @@ li a:hover {
     margin-bottom: 1px; 
     display:flex;
     justify-content: center;
-
 }
 
 .organisation img {
@@ -229,7 +246,12 @@ li a:hover {
     color: #1200b7;
 }
 
+#Organisation p {
+    font-weight: normal;
+}
 
+
+/*For the map*/
 
 #map {
     height: 500px; 
@@ -251,6 +273,27 @@ li a:hover {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+}
+/*Partnership*/
+#partnership {
+    background-color: white;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+ }
+.partnership h2 {
+    margin : 10;
+    font-size:20px;
+    font-weight:normal;
+    }
+.partnership p {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: normal;
+    font:oblique;
 }
 
 /*Get-Involved */
@@ -292,7 +335,123 @@ li a:hover {
     color: #c1ac37; /* Change hover color to gold for contrast and better UX */
 }
 
+/*Starting of the partnership section */
+/* Partnership Container Enhancements */
+/* Base Fonts */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
 
+/* Partnership Container Enhancements */
+.partnership-container {
+    background-color: #f5f5f5;  
+    padding: 50px;
+    border-radius: 15px; 
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading enhancements */
+.partnership-container h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;  
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+}
+
+.partnership-content {
+    display: flex;
+    align-items: center;  /* vertically centering content */
+}
+
+/* Partnership Description */
+.partnership-description {
+    flex: 60%;  /* Taking 60% of the space */
+    padding-right: 30px;
+}
+
+.partnership-description p {
+    font-weight: 400;  /* Making it regular, not bold */
+    line-height: 1.8;  /* Improving readability */
+    font-size: 18px;
+    color: #666;
+}
+
+/* Image Enhancements */
+.partnership-image {
+    flex: 40%;  /* Taking 40% of the space */
+}
+
+.partnership-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/*Image credits for JU */
+.image-credit {
+    font-size: 12px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.image-credit a {
+    color: #666;
+    text-decoration: none;
+}
+
+.image-credit a:hover {
+    text-decoration: underline;
+}
+
+
+/* Modal styles */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal p {
+    margin: auto;
+    display: block;
+    width: 60%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #888;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    animation-name: modalAnimation;
+    animation-duration: 0.4s;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes modalAnimation {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+/*Contact details Section */
 
 #contact-details {
     display: flex;
@@ -311,6 +470,14 @@ li a:hover {
     flex-direction: column;
     align-items: center; 
     
+}
+
+#contact-details h3 {
+    font-weight: normal; /*setting contact details section to unbold for */
+}
+
+#contact-form p {
+    font-weight: normal; /*setting paragraph section to unbold for the form  */
 }
 
 #contact-container {
@@ -354,4 +521,17 @@ form button {
 
 form button:hover {
     background-color: #0056b3;
+}
+
+/*all rights to Edu Connect */
+footer {
+    background-color: #f9f9f9;  /* light grey background */
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;  /* light border on top */
+}
+
+.footer-content {
+    font-size: 14px;
+    color: #666;  /* darker text color for better contrast */
 }
