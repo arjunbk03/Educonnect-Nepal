@@ -63,10 +63,6 @@ function initMap() {
     {name: "Maya Universe SagraMatha", location: {lat:27.214262189172263 , lng: 86.62834811684296}}, // Maya Universe Sagarmatha
     {name: "Maya Universe Apsara", location: {lat:28.015268458358392 , lng: 84.29465622029666}}, // Maya Universe Sagarmatha
     {name: "Maya Universe Academy", location: {lat:28.083139884056983 , lng: 84.33310836564743}}, // Maya Universe Sagarmatha
-    {name: "Save the Children", location: {lat: 27.704435410079615, lng: 85.35081347989743}}, //Save the Children Nepal
-    {name: "Plan International", location: {lat: 27.685386214867748, lng:85.3152165570225}}, //Plan International Nepal
-    {name: "World Vision", location: {lat:27.67005281635616, lng:85.31366759561045}}, //World vision
-    {name: "Teach for Nepal", location: {lat:27.7101266708403, lng:85.31584108845894}},//TFN Kathmandu
     {name: "United World Schools", location: {lat:27.73967429327601, lng:85.33628812924816}},//UWC Kathmandu
     {name: "National Campaign for Education Nepal", location: {lat:27.684259641565617, lng:85.31212091088322}}, //National Campaign for Education Nepal
   ];;
