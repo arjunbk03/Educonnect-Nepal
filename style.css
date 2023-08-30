@@ -2,46 +2,97 @@
 /* General Font Styling */
 body {
     font-family: 'Open Sans', sans-serif;
-    color: #666;  /* general text color, you can adjust */
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
-    color: #333;  /* headings color, you can adjust */
-}
-
-body {
+    color: #666;  /* general text color */
     margin: 0;
     padding: 0;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;  /* headings color */
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+    
+    ul {
+        padding: 15px;
+    }
+
+    li a {
+        font-size: 16px;
+        padding: 12px 14px;
+    }
+}
+
+/* Styles for smaller devices like large mobile phones */
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    
+    ul {
+        padding: 10px;
+    }
+
+    li a {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+}
+
+/* Styles for extra small devices like small mobile phones */
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    
+    ul {
+        padding: 5px;
+    }
+
+    li a {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}
 /* For the logo */
 #logo {
-    width: 100px; 
-    height: 100px; 
-    border-radius:50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
 
 /* For Educonnect Nepal: */
 p {
-    float:left;
+    float: left;
     margin-right: 20px;
     line-height: 60px;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 /* For the nav bars */
 ul {
     list-style-type: none;
     margin: 0;
-    padding:10px;
+    padding: 10px;
     overflow: hidden;
     background-color: #fafafa;
     line-height: 60px;
 }
 
 li {
-    float:left;
+    float: left;
 }
 
 li a {
@@ -58,31 +109,30 @@ li a:hover {
     color: #ceb855;
 }
 
-
 /* Now the Slideshow */
 .slideshow-container {
     max-width: 100%;
     position: relative;
     margin: auto;
-    overflow:hidden;
-    height:800px;
-  }
-  
-  /* Hide the images by default */
-  .slide {
-    position:absolute;
+    overflow: hidden;
+    height: 800px;
+}
+
+/* Hide the images by default */
+.slide {
+    display: none;  /* Changed from position:absolute */
     width: 100%;
-    height:100%;
-  }
-  
-  .slide img {
+    height: 100%;
+}
+
+.slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  
-  /* Style the navigation buttons */
- /* Previous & next buttons */
+}
+
+/* Style the navigation buttons */
+/* Previous & next buttons */
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -96,26 +146,23 @@ li a:hover {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
+}
+
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  /* Position the "previous button" to the left */
-  .prev {
+}
+
+.prev {
     left: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
+}
 
-/*This is for the text on the image:*/
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* This is for the text on the image: */
 .image-text {
     position: absolute;
     top: 60%;
@@ -125,18 +172,19 @@ li a:hover {
     transition: opacity 2s ease-in-out;
     color: rgb(247, 247, 247);
     font-size: 3em;
-  }
-  
-  .fade .image-text {
-    opacity: 1;
-  }
+}
 
-  .bottom-right {
+.fade .image-text {
+    opacity: 1;
+}
+
+.bottom-right {
     position: absolute;
-    color:white;
+    color: white;
     bottom: 8px;
     right: 16px;
-    }
+}
+
 /*About Page Styles */
 .about {
     background-color: white;
@@ -390,6 +438,9 @@ body {
     box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
 /*Image credits for JU */
 .image-credit {
     font-size: 12px;
