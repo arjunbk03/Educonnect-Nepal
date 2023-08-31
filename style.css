@@ -1,8 +1,7 @@
-/*Using the same font from the google fonts */
-/* General Font Styling */
+/* Using the same font from Google Fonts */
 body {
     font-family: 'Open Sans', sans-serif;
-    color: #666;  /* general text color */
+    color: #666; /* General text color */
     margin: 0;
     padding: 0;
 }
@@ -12,17 +11,16 @@ img {
     height: auto;
 }
 
-
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
-    color: #333;  /* headings color */
+    color: #333; /* Headings color */
 }
 
 @media only screen and (max-width: 1024px) {
     body {
         font-size: 18px;
     }
-    
+
     ul {
         padding: 15px;
     }
@@ -34,38 +32,48 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Styles for smaller devices like large mobile phones */
-
 @media only screen and (max-width: 768px) {
     body {
         font-size: 16px;
     }
-    
+
     ul {
-        padding: 10px;
+        text-align: right;
+    }
+
+    li {
+        float: none; /* Make sure the list items stack vertically */
+        margin: 0;
     }
 
     li a {
+        display: block;
         font-size: 14px;
         padding: 10px 12px;
+        margin-left: 0;  /* Remove the left margin */
+        margin-bottom: 5px;
     }
 }
 
 /* Styles for extra small devices like small mobile phones */
-
 @media only screen and (max-width: 480px) {
     body {
         font-size: 14px;
     }
-    
+
     ul {
         padding: 5px;
+        text-align: right;
     }
 
     li a {
         font-size: 12px;
         padding: 8px 10px;
+      
     }
+  
 }
+
 /* For the logo */
 #logo {
     width: 100px;
@@ -73,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 50%;
 }
 
-/* For Educonnect Nepal: */
+/* For Educonnect Nepal */
 p {
     float: left;
     margin-right: 20px;
@@ -108,6 +116,77 @@ li a {
 li a:hover {
     color: #ceb855;
 }
+
+/*nav bars */
+/* General Nav Styles */
+/* General Nav Styles */
+nav {
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+/* Hamburger Icon */
+.menu-icon {
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+/* Hide checkbox */
+#menuCheckbox {
+    display: none;
+}
+
+/* Responsive Menu */
+#menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* For menu pushing down the content */
+#menuCheckbox:checked + .menu-icon + #menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+        padding-left: 20px;
+    }
+
+    nav li {
+        margin: 15px 0;
+    }
+}
+/* to style the logo and title side by side */
+.logo-title-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* space between logo and title */
+}
+
 
 /* Now the Slideshow */
 .slideshow-container {
@@ -185,106 +264,143 @@ li a:hover {
     right: 16px;
 }
 
-/*About Page Styles */
+/* Now the Slideshow */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto; /* This centers the slideshow container horizontally */
+    overflow: hidden;
+    height: 800px;
+    text-align: center; /* This centers the content inside the slideshow container */
+}
+/* About Page Styles */
 .about {
     background-color: white;
-    padding:20px;
-    display:flex;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This centers the content inside the about section */
+    text-align: center; /* This centers the text inside the about section */
+    margin: auto; /* This centers the about section horizontally */
+}
+
+
+/* About Page Styles */
+.about {
+    background-color: white;
+    padding: 20px;
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
+
 .about h2 {
-    margin : 10;
-    font-size:20px;
-    font-weight:normal;
-}
-.about p {
-    margin-top: 20px;
     font-size: 20px;
-    line-height: 1.5;
     font-weight: normal;
-    font:oblique;
+    margin: 10px 0;
 }
 
-/*CSS rule for the current condition page */
+.about p {
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+/* Current Condition Page Styles */
+/* Current Condition Page Styles */
 .card-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin: auto;
-  }
-  
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     width: 30%;
     margin: 10px;
+    padding: 2px 10px;
     text-decoration: none;
     color: rgb(0, 0, 0);
-  }
-  
-  .card:hover {
-    box-shadow: 0 8px 40px 0 rgba(0,0,0,0.2);
-  }
-  
-  .card-img {
+}
+
+.card:hover {
+    box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
     width: 100%;
     height: auto;
-  }
-  
-  .card-description {
-    padding: 2px 10px;
-  }
-  
-  .card p {
-    font-weight:normal;
+}
+
+.card p {
+    font-size: 16px;
     line-height: 1.5;
-  }
+    font-weight: normal;
+}
 
-  
-/*For the organisation: */
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+    .card-container {
+        flex-direction: column; /* Display cards in a column on mobile */
+        align-items: center; /* Center-align cards on mobile */
+    }
 
+    .card {
+        width: 80%; /* Make cards wider on mobile */
+    }
+}
+
+/* Organisation Styles */
 .organisations {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     margin: auto;
-    margin-top: 200px;
-    line-height: 1.5;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.1);
+    font-weight: normal;
 }
 
 .organisation {
-    width: 60%;
-    margin: 10px 0px;
+    width: 100%;
+    margin: 10px 0;
     box-sizing: border-box;
     padding: 5px;
-    word-wrap: break-word;
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.2);
+    font-weight: normal;
 }
 
 .organisation h3 {
-    margin-top: 10px;
     font-size: 20px;
+    margin-top: 10px;
 }
 
 .organisation p {
-    margin: 4px 0;
-    font-size: 16px;
-    white-space: normal;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 1.8;
     font-weight: normal;
-    margin-bottom: 1px; 
-    display:flex;
-    justify-content: center;
+    margin: 4px 0;
+    text-align: center;
+}
+#Organisation p {
+    text-align: center;
 }
 
 .organisation img {
-    width: 250px;
+    width: 100px;
     height: 100px;
     border-radius: 50%;
     object-fit: contain;
@@ -293,13 +409,21 @@ li a:hover {
 .organisation a {
     color: #1200b7;
 }
-
-#Organisation p {
-    font-weight: normal;
+/*Image credits for JU */
+.image-credit {
+    font-size: 12px;
+    color: #777;
+    margin-top: 5px;
 }
 
+.image-credit a {
+    color: #666;
+    text-decoration: none;
+}
 
-/*For the map*/
+.image-credit a:hover {
+    text-decoration: underline;
+}
 
 #map {
     height: 500px; 
@@ -322,7 +446,51 @@ li a:hover {
     margin: 4px 2px;
     cursor: pointer;
 }
-/*Partnership*/
+
+/* Modal styles */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal p {
+    margin: auto;
+    display: block;
+    width: 60%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #888;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    animation-name: modalAnimation;
+    animation-duration: 0.4s;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes modalAnimation {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
 #partnership {
     background-color: white;
     padding:20px;
@@ -343,46 +511,6 @@ li a:hover {
     font-weight: normal;
     font:oblique;
 }
-
-/*Get-Involved */
-
-#get-involved {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 50px auto;
-    padding: 20px;
-    background: url('https://upload.wikimedia.org/wikipedia/commons/f/fc/Natural_scenery_of_nepal_09.jpg') no-repeat center center/cover;
-    border-radius: 20px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    line-height: 1.5;
-    width: 90%;
-    text-align: center;
-    box-sizing: border-box;
-    color: rgb(0, 0, 0); /* Change text color to white for better visibility on image background */
-}
-
-#get-involved ul {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text visibility */
-}
-
-#get-involved ul li {
-    margin: 10px 0;
-}
-
-#get-involved ul li a {
-    color: rgb(0, 0, 0); /* Change link color to white for better visibility on image background */
-    text-decoration: none;
-}
-
-#get-involved ul li a:hover {
-    color: #c1ac37; /* Change hover color to gold for contrast and better UX */
-}
-
 /*Starting of the partnership section */
 /* Partnership Container Enhancements */
 /* Base Fonts */
@@ -501,9 +629,9 @@ body {
     from {top: -300px; opacity: 0}
     to {top: 0; opacity: 1}
 }
-
 /*Contact details Section */
 
+/* Contact details Section */
 #contact-container {
     display: flex;
     justify-content: space-between;
@@ -554,6 +682,18 @@ form button:hover {
     background-color: #0056b3;
 }
 
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+    #contact-container {
+        flex-direction: column; /* Display contact sections in a column on mobile */
+        align-items: center; /* Center-align contact sections on mobile */
+    }
+
+    #contact-details, #contact-form {
+        width: 80%; /* Make contact sections wider on mobile */
+    }
+}
+
 /*all rights to Edu Connect */
 footer {
     background-color: #f9f9f9;  /* light grey background */
@@ -565,4 +705,58 @@ footer {
 .footer-content {
     font-size: 14px;
     color: #666;  /* darker text color for better contrast */
+}
+
+@media only screen and (max-width: 768px) {
+    /* Reformat for mobile screens */
+
+    body {
+        font-size: 16px;
+    }
+
+    #partnership {
+        padding: 10px;
+    }
+
+    .partnership-container {
+        padding: 20px;
+    }
+
+    .partnership-content {
+        flex-direction: column; /* Stack description and image vertically */
+    }
+
+    .partnership-description, .partnership-image {
+        padding: 10px 0; /* Provide some vertical spacing */
+    }
+
+    .partnership-image img {
+        border-radius: 5px;
+    }
+
+    #contact-container {
+        flex-direction: column;
+    }
+
+    #contact-details, #contact-form {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .organisations {
+        padding: 10px;
+    }
+
+    .organisation {
+        margin: 5px 0;
+    }
 }
